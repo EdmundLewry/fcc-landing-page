@@ -1,0 +1,9 @@
+#features {
+    display: flex;
+}
+
+@media (max-with: 400px) {
+    #features {
+        flex-direction: column;
+    }
+}
