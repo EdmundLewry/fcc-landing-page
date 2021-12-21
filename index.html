@@ -9,33 +9,82 @@
     <title>Freecode Camp Landing Page Project - ClearBlueSkies</title>
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header id="header">
-        <img src="" alt="" id="header-img">
-        <nav id="nav-bar">
-            <a href="#features" class="nav-link">Hello</a>
-            <a href="#promo" class="nav-link">Hello</a>
-            <a href="#price" class="nav-link">Hello</a>
-        </nav>
+        <div class="nav-container container">
+            <img src="./images/SocialsLogo.png" alt="" id="header-img">
+            <nav id="nav-bar">
+                <a href="#trailer" class="nav-link">Trailer</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#retailers" class="nav-link">Buy</a>
+            </nav>
+        </div>
     </header>
     <main>
+        <section class="container blurb">
+            <h1 id="title">Wander On</h1>
+            <p>
+                Bring the spirit of adventure to your town or city with Wander On, an exploration app for your Android phone or tablet! Wander On provides a map that shows where you've been, uncovering it as you go and highlighting places of interest for you to strive towards. Find something new? Add it to your map. 
+            </p>
+            <p>
+                Free and open source, Wander On let's you explore secure in the knowledge that your location data is yours alone.
+            </p>
+            <p>Bring a sense of wonder to your world and Wander On!</p>
+        </section>
+        <section class="back-1" id="trailer">
+            <div class="container">
+                <div class="video-container">
+                    <iframe id="video" src="https://www.youtube.com/embed/24nrrcLfMVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
         <section>
             <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
-                <input type="submit" value="Submit" id="submit">
+                <label id="subscribe-label" for="email">Want to hear about updates?</label>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                    <input type="submit" value="Sign Up" id="submit">
+                </div>
             </form>
         </section>
-        <section id="features">
-
+        <section class="container gallery" id="features">
+            <div class="feature">
+                <img class="feature-icon" src="http://placekitten.com/100/100" alt="">
+                <p>This is a feature of this project</p>
+            </div>
+            <div class="feature">
+                <img class="feature-icon" src="http://placekitten.com/100/100" alt="">
+                <p>This is a feature of this project</p>
+            </div>
+            <div class="feature">
+                <img class="feature-icon" src="http://placekitten.com/100/100" alt="">
+                <p>This is a feature of this project</p>
+            </div>
         </section>
-        <section id="promo">
-            <video src="" id="video"></video>
-        </section>
-        <section id="price">
-
+        <section id="retailers">
+            <div class="container" >
+                <div class="retailer-container">
+                    <a href="#" class="retailer">
+                        <img class="retailer-icon" src="./images/google-play-badge.png" alt="">
+                    </a>
+                    <a href="#" class="retailer">
+                        <img class="retailer-icon" src="./images/badge.svg" alt="">
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class="container">
+            <p>Website designed and developed by Edmund Lewry</p>
+            <p>Product is an example only. No real product exists.</p>
+            <p>From the Freecode Camp <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page">Landing Page Project</a></p>
+        </div>
+    </footer>
 </body>
 </html>
