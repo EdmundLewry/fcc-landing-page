@@ -13,6 +13,7 @@
 
     --font-small: 0.75rem;
     --font-regular: 1.05rem;
+    --font-medium: 1.15rem;
     --font-large: 3.5rem;
 }
 
@@ -68,6 +69,7 @@ a:hover {
     justify-content: space-evenly;
     width: 40%;
     min-width: 300px;
+    font-size: var(--font-medium);
 }
 
 main {
@@ -123,14 +125,20 @@ main {
     height: 315px;
 }
 
+.gallery {
+    margin-top: 50px;
+}
+
 .feature {
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .feature-icon {
     flex: 1;
     max-width: 200px;
+    font-size: 5em;
 }
 
 .feature p {
@@ -141,7 +149,6 @@ main {
 
 .retailer-container {
     display: flex;
-    margin-top: 30px;
     flex-direction: column;
 }
 
